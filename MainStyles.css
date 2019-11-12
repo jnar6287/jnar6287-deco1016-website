@@ -1,0 +1,229 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+body {
+  background: #186DC0;
+  color: #fff;
+}
+
+header {
+  background: #186DC0;
+}
+
+.logoLand {
+  max-width: 100%;
+  padding: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.logoLogin {
+  max-width: 100%;
+  padding: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  background: #186DC0;
+  text-align: center;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.btn-group button {
+  background-color: #00ABFF;
+  border: 2px solid white;
+  color: white;
+  padding: 2%;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:hover {
+  background-color: #186DC0;
+}
+
+.form-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.form-group label{
+  text-align: right;
+  padding-right: 20px;
+  max-width: 120px;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 120px;
+}
+
+.form-group label span{
+  display: block;
+  font-size: 0.75em;
+  opacity: 0.5;
+}
+
+.form-group label + *{
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+input, select{
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+}
+
+[type=submit] {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  background-color: #00ABFF;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+[type=txtbuttong] {
+  width: 50%;
+  color:  #ffffff;
+  background-color: #186DC0;
+  border: none;
+  padding: 10px;
+}
+
+[type=txtbuttonjoin] {
+  width: 50%;
+  color:  #ffffff;
+  background-color: #186DC0;
+  border: none;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px){
+  main{
+    width: auto;
+    border-radius: 0;
+  }
+
+  .btn-group button {
+    background-color: #00ABFF;
+    border: 2px solid white;
+    color: white;
+    padding: 2%;
+    cursor: pointer;
+  }
+  
+}
